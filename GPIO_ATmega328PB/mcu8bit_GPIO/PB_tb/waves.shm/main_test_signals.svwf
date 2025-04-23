@@ -1,0 +1,275 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+#
+# Groups
+#
+if {[catch {group get -using [list {CPU Signals}]}]} {
+set createdGroup([list {CPU Signals}]) 1
+catch {group new -name {CPU Signals} -overlay 0}
+}
+if {[catch {group get -using [list {Digital Input Bypass}]}]} {
+set createdGroup([list {Digital Input Bypass}]) 1
+catch {group new -name {Digital Input Bypass} -overlay 0}
+}
+if {[catch {group get -using [list {Alt Function Mux}]}]} {
+set createdGroup([list {Alt Function Mux}]) 1
+catch {group new -name {Alt Function Mux} -overlay 0}
+}
+if {[catch {group get -using [list {Port Output}]}]} {
+set createdGroup([list {Port Output}]) 1
+catch {group new -name {Port Output} -overlay 0}
+}
+if {[info exists createdGroup([list {CPU Signals}])]} {
+group using {CPU Signals}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.ireset}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.cp2}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.IO_Addr[5:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.dbus_in[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.iowe}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.iore}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.out_en}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.dbus_out[7:0]}]} ]
+}
+
+if {[info exists createdGroup([list {Digital Input Bypass}])]} {
+group using {Digital Input Bypass}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.pinB_i[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DIB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DIB_o[7:0]}]} ]
+}
+
+if {[info exists createdGroup([list {Alt Function Mux}])]} {
+group using {Alt Function Mux}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.ddrB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.PUD}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.portB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.PUOEB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.PUOVB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DDOEB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DDOVB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.PVOEB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.PVOVB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DIEOEB[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.DIEOVB[7:0]}]} ]
+}
+
+if {[info exists createdGroup([list {Port Output}])]} {
+group using {Port Output}
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.pu_B[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.pu_B_int[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.dd_B[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.pv_B[7:0]}]} ] \
+    [subst  {[format {gpio_PB_tb.Port_B_inst.die_B[7:0]}]} ]
+}
+
+
+set groupId0 [waveform add -groups {{CPU Signals}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst  {
+    {[format {gpio_PB_tb.Port_B_inst.ireset}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.cp2}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.IO_Addr[5:0]}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.dbus_in[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.iowe}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.iore}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.out_en}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.dbus_out[7:0]}]} {-radix %b}
+}] childcmds {
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+} {
+    set expected [ join [waveform signals -format path $gpID0] ]
+    if {[string equal $name $expected] || $name == "cdivider"} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+        if { $childcmds != ""} {
+            eval $childcmds
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.TESTCASE[3:0]}]}
+	} ]]
+waveform format $id -radix %d -color #00ffff
+
+set groupId0 [waveform add -groups {{Digital Input Bypass}}]
+waveform hierarchy collapse $groupId0
+
+
+set groupId0 [waveform add -groups {{Alt Function Mux}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst  {
+    {[format {gpio_PB_tb.Port_B_inst.ddrB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.PUD}]} {}
+    {[format {gpio_PB_tb.Port_B_inst.portB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.PUOEB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.PUOVB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.DDOEB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.DDOVB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.PVOEB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.PVOVB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.DIEOEB[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.DIEOVB[7:0]}]} {-radix %b}
+}] childcmds {
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+    {}
+} {
+    set expected [ join [waveform signals -format path $gpID0] ]
+    if {[string equal $name $expected] || $name == "cdivider"} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+        if { $childcmds != ""} {
+            eval $childcmds
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+
+set groupId0 [waveform add -groups {{Port Output}}]
+set gpGlist0 [waveform hierarchy contents $groupId0]
+set gpID0 [lindex $gpGlist0 0]
+foreach {name attrs} [subst  {
+    {[format {gpio_PB_tb.Port_B_inst.pu_B[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.pu_B_int[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.dd_B[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.pv_B[7:0]}]} {-radix %b}
+    {[format {gpio_PB_tb.Port_B_inst.die_B[7:0]}]} {-radix %b}
+}] childcmds {
+    {}
+    {}
+    {}
+    {}
+    {}
+} {
+    set expected [ join [waveform signals -format path $gpID0] ]
+    if {[string equal $name $expected] || $name == "cdivider"} {
+        if {$attrs != ""} {
+            eval waveform format $gpID0 $attrs
+        }
+        if { $childcmds != ""} {
+            eval $childcmds
+        }
+    }
+    set gpGlist0 [lrange $gpGlist0 1 end]
+    set gpID0 [lindex $gpGlist0 0]
+}
+
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.AS2}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.EXTCK}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.INTRC}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.MSTR}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC1A}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC1A_EN}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC1B}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC1B_EN}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC2A}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.OC2A_EN}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.PCIE0}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.PCINT[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.RXEN1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.SCK0_OUT}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.SLEEP}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.SPE0}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.SPI0_MT_OUT}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.SPI0_SL_OUT}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.TXD1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.TXEN1}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.UMSEL}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {gpio_PB_tb.Port_B_inst.XCK1_OUT}]}
+	} ]]
+
+waveform xview limits 0 100000000ps

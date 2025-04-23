@@ -1,0 +1,89 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+#
+# Groups
+#
+if {[catch {group get -using [list {TOP_signal}]}]} {
+set createdGroup([list {TOP_signal}]) 1
+catch {group new -name TOP_signal -overlay 0}
+}
+if {[catch {group get -using [list {CBC_signal}]}]} {
+set createdGroup([list {CBC_signal}]) 1
+catch {group new -name CBC_signal -overlay 0}
+}
+if {[info exists createdGroup([list {TOP_signal}])]} {
+group using TOP_signal
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {top_tb.uut.mosi}]} ] \
+    [subst  {[format {top_tb.uut.sck}]} ] \
+    [subst  {[format {top_tb.uut.ss}]} ] \
+    [subst  {[format {top_tb.uut.clk}]} ] \
+    [subst  {[format {top_tb.uut.rst}]} ] \
+    [subst  {[format {top_tb.uut.new_message}]} ] \
+    [subst  {[format {top_tb.uut.start_encrypt}]} ] \
+    [subst  {[format {top_tb.uut.key[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.iv[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.pt[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.ct[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.aes_start}]} ] \
+    [subst  {[format {top_tb.uut.aes_key[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.aes_in[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.aes_out[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.aes_done}]} ] \
+    [subst  {[format {top_tb.uut.miso}]} ]
+}
+
+if {[info exists createdGroup([list {CBC_signal}])]} {
+group using CBC_signal
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {top_tb.uut.cbc_core.aes_done}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.start}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.aes_start}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.busy}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.ciphertext[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.done}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.iv[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.key[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.new_message}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.prev_cipher[127:0]}]} ] \
+    [subst  {[format {top_tb.uut.cbc_core.xored_input[127:0]}]} ]
+}
+
+
+set groupId0 [waveform add -groups TOP_signal]
+
+set id [waveform add -signals [subst  {
+	{[format {top_tb.uut.spi_core.state[1:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {top_tb.uut.spi_core.cmd[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {top_tb.tmp[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {top_tb.received_ct[127:0]}]}
+	} ]]
+
+set groupId0 [waveform add -groups CBC_signal]
+waveform hierarchy collapse $groupId0
+
+
+waveform xview limits 0 294700000ps

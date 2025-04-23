@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+AES_TOP.v
+AES_main.v
+SPI_slave.v
+cbc_logic.v
+aes_key_expand.v
+round.v
+sbox.v
+shiftrows.v
+subbytes.v
+mixcolumn.v
+lastround.v
+top_tb.v
+-access
++rwc
+-gui

@@ -1,0 +1,67 @@
+*** Message Type: info ***
+When: Tue Nov 12 03:19:55 PM +07 2024
+SimVision started.
+Version: TOOL:  simvision(64)   23.09-s001
+User: sarun
+Host: esidcad1
+Platform: Linux/x86_64/4.18.0-553.16.1.el8_10.x86_64
+Started: Tue Nov 12 03:19:55 PM +07 2024
+Command: /home/cadence/XCELIUMMAIN23.09.001/tools.lnx86/simvision/bin/64bit/simvision.exe -connect dc:esidcad1:37971 -64BIT -nocopyright
+Work Directory: /nfs/mcu8b/sarun/mcu8bit_USART
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:19:56 PM +07 2024
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:19:58 PM +07 2024
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:19:59 PM +07 2024
+Connect to Simulator
+      Design: worklib.usart_test_tb3:v
+   Languages: verilog
+   Simulator: XM-Sim
+     Version: TOOL:   xmsim(64)       23.09-s001
+        User: sarun
+        Host: esidcad1
+Time Started: Tue Nov 12 03:19:55 PM +07 2024
+  Process ID: 2516187
+   Directory: /nfs/mcu8b/sarun/mcu8bit_USART
+     Command: xrun FIFO.v USART_Clk.v USARTn.v usart_test_tb3.v -access +rwc -gui
+
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:19:59 PM +07 2024
+Create utility window: "Properties"
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:20:03 PM +07 2024
+Create browser window: "Design Browser 2"
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:20:05 PM +07 2024
+Delete browser window: "Design Browser 2"
+ 
+*** Message Type: error ***
+When: Tue Nov 12 03:20:05 PM +07 2024
+bad window path name ".watchList1.tba"
+    while executing
+"winfo width $container"
+    (object "::toolbarManager0" method "::toolbar::ToolbarManager::fixLayout" body line 2)
+    invoked from within
+"::toolbarManager0 fixLayout .watchList1.tba"
+    (in namespace inscope "::toolbar::ToolbarManager" script line 1)
+    invoked from within
+"namespace inscope ::toolbar::ToolbarManager {::toolbarManager0 fixLayout .watchList1.tba}"
+    ("after" script)
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:20:18 PM +07 2024
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Tue Nov 12 03:31:06 PM +07 2024
+SimVision Exit.
+ 

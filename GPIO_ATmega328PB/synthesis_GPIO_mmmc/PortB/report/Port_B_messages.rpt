@@ -1,0 +1,11 @@
+  =================
+   Message Summary
+  =================
+----------------------------------------------------------------
+|  Id   |Sev |Count|               Message Text                |
+----------------------------------------------------------------
+|RPT-16 |Info|    1|Joules engine is used.                     |
+|SYNTH-8|Info|    1|Done incrementally optimizing.             |
+|TUI-744|Info|    3|Timing analysis will be done for this view.|
+|       |    |     |Worst paths will be shown in this view.    |
+----------------------------------------------------------------

@@ -1,0 +1,277 @@
+
+ 	 Check Design Report (c)
+	 ------------------- 
+No subdesign's name is greater than 1.5k in length.
+
+ Feedthrough Module(s)
+ -------------------------
+No feed through module in 'Port_D'
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'Port_D'
+
+No empty modules in design 'Port_D'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'Port_D'
+
+No unloaded port in 'Port_D'
+
+ Unloaded Combinational Pin(s)
+ -------------------------------
+No unloaded combinational element in 'Port_D'
+
+ Assigns
+ ------- 
+Encountered an assign statement at port 'port:Port_D/DID_o[7]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[6]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[5]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[4]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[3]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[2]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[1]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DID_o[0]' in design Port_D
+Encountered an assign statement at port 'port:Port_D/DDR_XCK0' in design Port_D
+Encountered an assign statement at port 'port:Port_D/dd_D[4]' in design Port_D
+Total number of assign statements in design 'Port_D' : 10
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+No undriven combinational pin in 'Port_D'
+
+No undriven sequential pin in 'Port_D'
+
+The following hierarchical pin(s) in design 'Port_D' are undriven
+hpin:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/tog 	 (fanout : 0)
+Total number of hierarchical undriven pins in design 'Port_D' : 1
+
+No undriven port in 'Port_D'
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'Port_D'
+
+No multidriven sequential pin in 'Port_D'
+
+No multidriven hierarchical pin in 'Port_D'
+
+No multidriven ports in 'Port_D'
+
+No multidriven unloaded nets in 'Port_D'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'Port_D'
+
+No constant sequential pin(s) in design 'Port_D'
+
+No constant hierarchical pin(s) in design 'Port_D'
+
+No constant connected ports in design 'Port_D'
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'Port_D'
+No preserved sequential instance(s) in design 'Port_D'
+No preserved hierarchical instance(s) in design 'Port_D'
+
+  Physical only instances(s)
+  ----------------
+No physical only instance(s) in design 'Port_D'
+
+  Logical only instance(s) and linked libcells
+    -----------------------------------------
+design 'Port_D' has following logical only instance(s)
+inst:Port_D/IO_Port_D_inst/g708__7410
+inst:Port_D/IO_Port_D_inst/g709__6417
+inst:Port_D/IO_Port_D_inst/g710__5477
+inst:Port_D/IO_Port_D_inst/g711__2398
+inst:Port_D/IO_Port_D_inst/g712__5107
+inst:Port_D/IO_Port_D_inst/g713__6260
+inst:Port_D/IO_Port_D_inst/g714__4319
+inst:Port_D/IO_Port_D_inst/g715__8428
+inst:Port_D/IO_Port_D_inst/g716__5526
+inst:Port_D/IO_Port_D_inst/g717__6783
+inst:Port_D/IO_Port_D_inst/g718__3680
+inst:Port_D/IO_Port_D_inst/g719__1617
+inst:Port_D/IO_Port_D_inst/g720__2802
+inst:Port_D/IO_Port_D_inst/g721__1705
+inst:Port_D/IO_Port_D_inst/g722__5122
+inst:Port_D/IO_Port_D_inst/g723__8246
+inst:Port_D/IO_Port_D_inst/g724__7098
+inst:Port_D/g52__6131
+inst:Port_D/g960__1881
+inst:Port_D/g53__5115
+inst:Port_D/g961__7482
+inst:Port_D/g48__4733
+inst:Port_D/g54__6161
+inst:Port_D/g49__9315
+inst:Port_D/g50__9945
+inst:Port_D/g962__2883
+inst:Port_D/g963__2346
+inst:Port_D/g51__1666
+inst:Port_D/g964__7410
+inst:Port_D/g965__6417
+inst:Port_D/g966__5477
+inst:Port_D/g967__2398
+inst:Port_D/g968__5107
+inst:Port_D/g969__6260
+inst:Port_D/g970__4319
+inst:Port_D/g971__8428
+inst:Port_D/g972__5526
+inst:Port_D/g973__6783
+inst:Port_D/g974__3680
+inst:Port_D/g975__1617
+inst:Port_D/g47__2802
+inst:Port_D/g976__1705
+inst:Port_D/g977__5122
+inst:Port_D/g978
+inst:Port_D/g979__8246
+inst:Port_D/g980__7098
+inst:Port_D/g981__6131
+inst:Port_D/g823__1881
+inst:Port_D/g824__5115
+inst:Port_D/g825__7482
+inst:Port_D/g826__4733
+inst:Port_D/g827__6161
+inst:Port_D/g828__9315
+inst:Port_D/g829__9945
+inst:Port_D/g830__2883
+inst:Port_D/g831__2346
+inst:Port_D/g832
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[0]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[1]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[5]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[3]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[7]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[6]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[4]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1026__2398
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1027__5107
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1028__6260
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/rg_current_reg[2]
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1030__4319
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1031__8428
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1032__5526
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1033__6783
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1034__3680
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1035__1617
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1036__2802
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1037__1705
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1038__5122
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1039__8246
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1040__7098
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1041__6131
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1043__5115
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1044__7482
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1045__4733
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1046__6161
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1047__9315
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1049__9945
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1050__2883
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1051__2346
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1052__1666
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1053
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1054
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g1055
+inst:Port_D/IO_Port_D_inst/rg_md_portx_inst/g2
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[3]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[2]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[0]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[4]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[6]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[1]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[5]
+inst:Port_D/IO_Port_D_inst/rg_md_ddrx_inst/rg_current_reg[7]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[4]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[6]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[7]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[0]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[2]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[5]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[3]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_sync_int_reg[1]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[0]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[6]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[4]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[1]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[5]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[3]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[2]
+inst:Port_D/IO_Port_D_inst/synchronizer_pinx_inst/d_latch_reg[7]
+Total number of logical only instances in design 'Port_D' : 117
+
+design 'Port_D' has the following logical only libcells linked to above instance(s)
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AO222HDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AND2HDV2RD
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NOR2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INOR2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NOR3BBHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/CLKNAND2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OA211HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INOR4HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/TBUFHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AO31HDVL
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OA31HDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/IOA22HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NAND3BBHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/CLKMUX2HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OR2HDV2RD
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OAOI211HDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OAI21HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/IAO22HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/DRQHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AO22HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OAI22HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INAND2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INHDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OAI21BHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/EDRNQHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/DQHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/LAHHDV0
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+              Name                       Total
+----------------------------------------------
+Unresolved References                        0
+Empty Modules                                0
+Unloaded Port(s)                             0
+Unloaded Sequential Pin(s)                   0
+Unloaded Combinational Pin(s)                0
+Assigns                                     10
+Undriven Port(s)                             0
+Undriven Leaf Pin(s)                         0
+Undriven hierarchical pin(s)                 1
+Multidriven Port(s)                          0
+Multidriven Leaf Pin(s)                      0
+Multidriven hierarchical Pin(s)              0
+Multidriven unloaded net(s)                  0
+Constant Port(s)                             0
+Constant Leaf Pin(s)                         0
+Constant hierarchical Pin(s)                 0
+Preserved leaf instance(s)                   0
+Preserved hierarchical instance(s)           0
+Feedthrough Modules(s)                       0
+Libcells with no LEF cell                    0
+Physical (LEF) cells with no libcell         0
+Subdesigns with long module name             0
+Physical only instance(s)                    0
+Logical only instance(s)                   117
+
+  Done Checking the design.

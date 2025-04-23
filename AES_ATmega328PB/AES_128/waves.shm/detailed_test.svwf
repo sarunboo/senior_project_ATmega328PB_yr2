@@ -1,0 +1,132 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+#
+# Groups
+#
+if {[catch {group get -using [list {AES_keygen}]}]} {
+set createdGroup([list {AES_keygen}]) 1
+catch {group new -name AES_keygen -overlay 0}
+}
+if {[catch {group get -using [list {Round_0}]}]} {
+set createdGroup([list {Round_0}]) 1
+catch {group new -name Round_0 -overlay 0}
+}
+if {[catch {group get -using [list {Round_between}]}]} {
+set createdGroup([list {Round_between}]) 1
+catch {group new -name Round_between -overlay 0}
+}
+if {[info exists createdGroup([list {AES_keygen}])]} {
+group using AES_keygen
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {aes_main_tb.uut.key_s[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s0[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s1[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s2[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s3[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s4[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s5[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s6[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s7[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s8[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.key_s9[127:0]}]} ]
+}
+
+if {[info exists createdGroup([list {Round_0}])]} {
+group using Round_0
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {aes_main_tb.uut.r0.data_in[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0.key_in[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0.sub_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0.shift_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0.mix_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0.data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r0_data_out[127:0]}]} ]
+}
+
+if {[info exists createdGroup([list {Round_between}])]} {
+group using Round_between
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {aes_main_tb.uut.r8_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r7_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r6_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r5_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r4_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r3_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r2_data_out[127:0]}]} ] \
+    [subst  {[format {aes_main_tb.uut.r1_data_out[127:0]}]} ]
+}
+
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.TESTCASE[3:0]}]}
+	} ]]
+waveform format $id -color #00ffff
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.expected_out[127:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.rst}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.data_in[127:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.key[127:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.encrypt_start}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.process_cnt[5:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.state}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.data_out[127:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.encrypt_done}]}
+	} ]]
+
+set groupId0 [waveform add -groups AES_keygen]
+waveform hierarchy collapse $groupId0
+
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.r_data_out[127:0]}]}
+	} ]]
+
+set groupId0 [waveform add -groups Round_0]
+
+
+set groupId0 [waveform add -groups Round_between]
+waveform hierarchy collapse $groupId0
+
+set id [waveform add -signals [subst  {
+	{[format {aes_main_tb.uut.r9_data_out[127:0]}]}
+	} ]]
+
+waveform xview limits 1250000ps 3250000ps

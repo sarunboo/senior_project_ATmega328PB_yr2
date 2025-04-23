@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-timescale
+1ns/10ps
+USARTn_netlist.v
+usart_test_tb.v
+-v
+scc013ull_hd_rvt.v
+-access
++rwc
+-define
+SDF_TEST
+-mess
+-gui

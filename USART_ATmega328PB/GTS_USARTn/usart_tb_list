@@ -1,0 +1,8 @@
+TB name		--> test function
+
+usart_test_tb	--> test basic asynchronous mode
+usart_test_tb2	--> test interrupt line and disabling of TX/RX in asynchronous mode
+usart_test_tb3	--> test synchronous mode
+usart_test_tb4	--> test frame error via forcing incoming bits
+usart_test_tb5	--> test MPCM mode in asynchronous mode
+usart_test_tb6	--> test MSPIM mode

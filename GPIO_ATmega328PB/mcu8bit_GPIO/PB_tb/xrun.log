@@ -1,0 +1,92 @@
+xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s001: Started on Apr 22, 2025 at 22:40:26 +07
+xrun
+	Port_B.sv
+	rg_md.sv
+	synchronizer.sv
+	IO_Port.sv
+	gpio_PB_tb.v
+	-access +rwc
+	-gui
+Recompiling... reason: file './Port_B.sv' is newer than expected.
+	expected: Sun Feb 23 16:56:38 2025
+	actual:   Tue Apr 22 18:29:59 2025
+file: Port_B.sv
+	module worklib.Port_B:sv
+		errors: 0, warnings: 0
+file: gpio_PB_tb.v
+		testPortPinConfig();
+		                  |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,142|20): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+		testPullupOverride();
+		                   |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,147|21): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+		testDataDirectionOverride();
+		                          |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,152|28): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+		testPortValueOverride();
+		                      |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,157|24): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+		testDigitalInputEnableOverride();
+		                               |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,162|33): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+			testPortPinConfig();
+			                  |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,267|21): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+			testPortPinConfig();
+			                  |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,314|21): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+			testPortPinConfig();
+			                  |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,327|21): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+			testPortPinConfig();
+			                  |
+xmvlog: *W,TMTPAR (gpio_PB_tb.v,353|21): A task enable with no arguments must not include an empty set of parentheses [10.2.2 (IEEE Std 1364-2005)].  The compiler has ignored the parentheses.  Use 'xmhelp xmvlog TMTPAR'  for further information.
+	module worklib.gpio_PB_tb:v
+		errors: 0, warnings: 9
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		gpio_PB_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Port_B:sv <0x4ef50c3e>
+			streams:  32, words: 11057
+		worklib.gpio_PB_tb:v <0x13b76a9c>
+			streams:  42, words: 60481
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  6       5
+		Registers:               44      41
+		Scalar wires:           132       -
+		Expanded wires:           8       1
+		Vectored wires:          13       -
+		Always blocks:            8       6
+		Initial blocks:           3       3
+		Cont. assignments:       36     108
+		Pseudo assignments:      31       -
+		Process Clocks:           3       2
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.gpio_PB_tb:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/cadence/XCELIUMMAIN23.09.001/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm gpio_PB_tb.Port_B_inst.ireset gpio_PB_tb.Port_B_inst.cp2 gpio_PB_tb.Port_B_inst.IO_Addr gpio_PB_tb.Port_B_inst.dbus_in gpio_PB_tb.Port_B_inst.iowe gpio_PB_tb.Port_B_inst.iore gpio_PB_tb.Port_B_inst.out_en gpio_PB_tb.Port_B_inst.dbus_out gpio_PB_tb.TESTCASE gpio_PB_tb.Port_B_inst.ddrB gpio_PB_tb.Port_B_inst.PUD gpio_PB_tb.Port_B_inst.portB gpio_PB_tb.Port_B_inst.PUOEB gpio_PB_tb.Port_B_inst.PUOVB gpio_PB_tb.Port_B_inst.DDOEB gpio_PB_tb.Port_B_inst.DDOVB gpio_PB_tb.Port_B_inst.PVOEB gpio_PB_tb.Port_B_inst.PVOVB gpio_PB_tb.Port_B_inst.DIEOEB gpio_PB_tb.Port_B_inst.DIEOVB gpio_PB_tb.Port_B_inst.pu_B gpio_PB_tb.Port_B_inst.pu_B_int gpio_PB_tb.Port_B_inst.dd_B gpio_PB_tb.Port_B_inst.pv_B gpio_PB_tb.Port_B_inst.die_B gpio_PB_tb.Port_B_inst.AS2 gpio_PB_tb.Port_B_inst.EXTCK gpio_PB_tb.Port_B_inst.INTRC gpio_PB_tb.Port_B_inst.MSTR gpio_PB_tb.Port_B_inst.OC1A gpio_PB_tb.Port_B_inst.OC1A_EN gpio_PB_tb.Port_B_inst.OC1B gpio_PB_tb.Port_B_inst.OC1B_EN gpio_PB_tb.Port_B_inst.OC2A gpio_PB_tb.Port_B_inst.OC2A_EN gpio_PB_tb.Port_B_inst.PCIE0 gpio_PB_tb.Port_B_inst.PCINT gpio_PB_tb.Port_B_inst.RXEN1 gpio_PB_tb.Port_B_inst.SCK0_OUT gpio_PB_tb.Port_B_inst.SLEEP gpio_PB_tb.Port_B_inst.SPE0 gpio_PB_tb.Port_B_inst.SPI0_MT_OUT gpio_PB_tb.Port_B_inst.SPI0_SL_OUT gpio_PB_tb.Port_B_inst.TXD1 gpio_PB_tb.Port_B_inst.TXEN1 gpio_PB_tb.Port_B_inst.UMSEL gpio_PB_tb.Port_B_inst.XCK1_OUT gpio_PB_tb.Port_B_inst.pinB_i gpio_PB_tb.Port_B_inst.DIB gpio_PB_tb.Port_B_inst.DIB_o
+Created probe 1
+xcelium> reset
+Loaded snapshot worklib.gpio_PB_tb:v
+xcelium> run
+Simulation complete via $finish(1) at time 100 US + 0
+./gpio_PB_tb.v:113 		$finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	23.09-s001: Exiting on Apr 22, 2025 at 23:28:53 +07  (total: 00:48:27)

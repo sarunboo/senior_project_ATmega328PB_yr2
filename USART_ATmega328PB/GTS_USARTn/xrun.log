@@ -1,0 +1,307 @@
+xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s001: Started on Apr 17, 2025 at 23:02:34 +07
+xrun
+	-timescale 1ns/10ps
+	USARTn_netlist.v
+	usart_test_tb.v
+	-v scc013ull_hd_rvt.v
+	-access +rwc
+	-define SDF_TEST
+	-mess
+	-gui
+Recompiling... reason: file './usart_test_tb.v' is newer than expected.
+	expected: Thu Apr 17 23:01:50 2025
+	actual:   Thu Apr 17 23:02:31 2025
+file: usart_test_tb.v
+/*
+ |
+xmvlog: *W,NOCMIC (usart_test_tb.v,175|1): error-prone block comment nested within block comment [2.3(IEEE)].
+	module worklib.usart_test_tb:v
+		errors: 0, warnings: 1
+		Caching library 'scc013ull_hd_rvt' ....... Done
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		usart_test_tb
+	Reading SDF file from location "USARTn_ss.sdf"
+	Annotating SDF timing data:
+		Compiled SDF file:     USARTn_ss.sdf.X
+		Log file:              sdf.log
+		Backannotation scope:  usart_test_tb.uut
+		Configuration file:    
+		MTM control:           MAXIMUM
+		Scale factors:         
+		Scale type:            
+xmelab: *W,SDFINF: Instance FE_PHC29_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 108>.
+xmelab: *W,SDFINF: Instance FE_DBTC0_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 209>.
+xmelab: *W,SDFINF: Instance FE_PHC28_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 86>.
+xmelab: *W,SDFINF: Instance FE_PHC27_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 84>.
+xmelab: *W,SDFINF: Instance FE_PHC26_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 85>.
+xmelab: *W,SDFINF: Instance FE_PHC24_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 87>.
+xmelab: *W,SDFINF: Instance FE_PHC25_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 213>.
+xmelab: *W,SDFINF: Instance FE_PHC17_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 94>.
+xmelab: *W,SDFINF: Instance FE_PHC23_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 89>.
+xmelab: *W,SDFINF: Instance FE_PHC20_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 91>.
+xmelab: *W,SDFINF: Instance FE_PHC22_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 94>.
+xmelab: *W,SDFINF: Instance FE_PHC21_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 91>.
+xmelab: *W,SDFINF: Instance FE_PHC18_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 93>.
+xmelab: *W,SDFINF: Instance FE_PHC19_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 93>.
+xmelab: *W,SDFINF: Instance FE_PHC9_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 102>.
+xmelab: *W,SDFINF: Instance FE_PHC16_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 96>.
+xmelab: *W,SDFINF: Instance FE_PHC8_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 103>.
+xmelab: *W,SDFINF: Instance FE_PHC15_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 98>.
+xmelab: *W,SDFINF: Instance FE_PHC14_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 102>.
+xmelab: *W,SDFINF: Instance FE_PHC10_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 101>.
+xmelab: *W,SDFINF: Instance FE_PHC13_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 99>.
+xmelab: *W,SDFINF: Instance FE_PHC12_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 100>.
+xmelab: *W,SDFINF: Instance FE_PHC11_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 101>.
+xmelab: *W,SDFINF: Instance FE_PHC3_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 108>.
+xmelab: *W,SDFINF: Instance FE_PHC7_FIFO_tx_inst_fifo_buf_4 not found at scope level <top-level> <./USARTn_ss.sdf, line 542>.
+xmelab: *W,SDFINF: Instance FE_PHC6_FIFO_tx_inst_fifo_buf_3 not found at scope level <top-level> <./USARTn_ss.sdf, line 544>.
+xmelab: *W,SDFINF: Instance FE_PHC5_FIFO_tx_inst_fifo_buf_0 not found at scope level <top-level> <./USARTn_ss.sdf, line 549>.
+xmelab: *W,SDFINF: Instance FE_PHC4_FIFO_tx_inst_fifo_buf_1 not found at scope level <top-level> <./USARTn_ss.sdf, line 547>.
+xmelab: *W,SDFINF: Instance FE_OFC3_FE_DBTN0_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 209>.
+xmelab: *W,SDFINF: Instance FE_OFC1_n_162 not found at scope level <top-level> <./USARTn_ss.sdf, line 1095>.
+xmelab: *W,SDFINF: Instance FE_PHC29_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2165>.
+xmelab: *W,SDFINF: Instance FE_PHC28_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2175>.
+xmelab: *W,SDFINF: Instance FE_PHC27_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2185>.
+xmelab: *W,SDFINF: Instance FE_PHC26_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2195>.
+xmelab: *W,SDFINF: Instance FE_PHC25_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2205>.
+xmelab: *W,SDFINF: Instance FE_PHC24_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2215>.
+xmelab: *W,SDFINF: Instance FE_PHC23_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2225>.
+xmelab: *W,SDFINF: Instance FE_PHC22_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2235>.
+xmelab: *W,SDFINF: Instance FE_PHC21_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2245>.
+xmelab: *W,SDFINF: Instance FE_PHC20_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2255>.
+xmelab: *W,SDFINF: Instance FE_PHC19_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2265>.
+xmelab: *W,SDFINF: Instance FE_PHC18_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2275>.
+xmelab: *W,SDFINF: Instance FE_PHC17_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2285>.
+xmelab: *W,SDFINF: Instance FE_PHC16_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2295>.
+xmelab: *W,SDFINF: Instance FE_PHC15_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2305>.
+xmelab: *W,SDFINF: Instance FE_PHC14_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2315>.
+xmelab: *W,SDFINF: Instance FE_PHC13_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2325>.
+xmelab: *W,SDFINF: Instance FE_PHC12_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2335>.
+xmelab: *W,SDFINF: Instance FE_PHC11_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2345>.
+xmelab: *W,SDFINF: Instance FE_PHC10_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2355>.
+xmelab: *W,SDFINF: Instance FE_PHC9_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2365>.
+xmelab: *W,SDFINF: Instance FE_PHC8_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2375>.
+xmelab: *W,SDFINF: Instance FE_PHC7_FIFO_tx_inst_fifo_buf_4 not found at scope level <top-level> <./USARTn_ss.sdf, line 2385>.
+xmelab: *W,SDFINF: Instance FE_PHC6_FIFO_tx_inst_fifo_buf_3 not found at scope level <top-level> <./USARTn_ss.sdf, line 2395>.
+xmelab: *W,SDFINF: Instance FE_PHC5_FIFO_tx_inst_fifo_buf_0 not found at scope level <top-level> <./USARTn_ss.sdf, line 2405>.
+xmelab: *W,SDFINF: Instance FE_PHC4_FIFO_tx_inst_fifo_buf_1 not found at scope level <top-level> <./USARTn_ss.sdf, line 2415>.
+xmelab: *W,SDFINF: Instance FE_PHC3_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2425>.
+xmelab: *W,SDFINF: Instance FE_OFC3_FE_DBTN0_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2435>.
+xmelab: *W,SDFINF: Instance FE_OFC1_n_162 not found at scope level <top-level> <./USARTn_ss.sdf, line 2445>.
+xmelab: *W,SDFINF: Instance FE_DBTC0_ireset not found at scope level <top-level> <./USARTn_ss.sdf, line 2455>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 2600>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 2622>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[2]  of module DRQHDV2 <./USARTn_ss.sdf, line 2644>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[3]  of module DRQHDV2 <./USARTn_ss.sdf, line 2666>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[4]  of module DRQHDV2 <./USARTn_ss.sdf, line 2688>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[5]  of module DRQHDV2 <./USARTn_ss.sdf, line 2710>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[6]  of module DRQHDV2 <./USARTn_ss.sdf, line 2732>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[7]  of module DRQHDV2 <./USARTn_ss.sdf, line 2754>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[8]  of module DRQHDV2 <./USARTn_ss.sdf, line 2776>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[9]  of module DRQHDV2 <./USARTn_ss.sdf, line 2798>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[10]  of module DRQHDV2 <./USARTn_ss.sdf, line 2820>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\rx_prsc_cnt_reg[11]  of module DRQHDV2 <./USARTn_ss.sdf, line 2842>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 2864>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 2886>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[2]  of module DRQHDV2 <./USARTn_ss.sdf, line 2908>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[3]  of module DRQHDV2 <./USARTn_ss.sdf, line 2930>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[4]  of module DRQHDV2 <./USARTn_ss.sdf, line 2952>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[5]  of module DRQHDV2 <./USARTn_ss.sdf, line 2974>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[6]  of module DRQHDV2 <./USARTn_ss.sdf, line 2996>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[7]  of module DRQHDV2 <./USARTn_ss.sdf, line 3018>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[8]  of module DRQHDV2 <./USARTn_ss.sdf, line 3040>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[9]  of module DRQHDV2 <./USARTn_ss.sdf, line 3062>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[10]  of module DRQHDV2 <./USARTn_ss.sdf, line 3084>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.USART_Clk_inst.\tx_prsc_cnt_reg[11]  of module DRQHDV2 <./USARTn_ss.sdf, line 3106>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[0]  of module DRQHDV0 <./USARTn_ss.sdf, line 4198>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[1]  of module DRQHDV0 <./USARTn_ss.sdf, line 4220>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[2]  of module DRQHDV0 <./USARTn_ss.sdf, line 4242>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[3]  of module DRQHDV0 <./USARTn_ss.sdf, line 4264>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[4]  of module DRQHDV0 <./USARTn_ss.sdf, line 4286>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[5]  of module DRQHDV0 <./USARTn_ss.sdf, line 4308>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[6]  of module DRQHDV0 <./USARTn_ss.sdf, line 4330>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[7]  of module DRQHDV0 <./USARTn_ss.sdf, line 4352>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[8]  of module DRQHDV0 <./USARTn_ss.sdf, line 4374>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.347) (-0.094)) of instance usart_test_tb.uut.\FIFO_tx_inst_dout_sync_reg[9]  of module DRQHDV0 <./USARTn_ss.sdf, line 4396>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.203) (-0.026)) of instance usart_test_tb.uut.\rx_sync_reg[2]  of module DSNQHDV0 <./USARTn_ss.sdf, line 4434>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][0]  of module DRQHDV2 <./USARTn_ss.sdf, line 5963>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][1]  of module DRQHDV2 <./USARTn_ss.sdf, line 5985>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][2]  of module DRQHDV2 <./USARTn_ss.sdf, line 6007>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][3]  of module DRQHDV2 <./USARTn_ss.sdf, line 6029>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][4]  of module DRQHDV2 <./USARTn_ss.sdf, line 6051>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][5]  of module DRQHDV2 <./USARTn_ss.sdf, line 6073>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][6]  of module DRQHDV2 <./USARTn_ss.sdf, line 6095>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][7]  of module DRQHDV2 <./USARTn_ss.sdf, line 6117>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][8]  of module DRQHDV2 <./USARTn_ss.sdf, line 6139>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][9]  of module DRQHDV2 <./USARTn_ss.sdf, line 6161>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[0][10]  of module DRQHDV2 <./USARTn_ss.sdf, line 6183>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][0]  of module DRQHDV2 <./USARTn_ss.sdf, line 6205>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][1]  of module DRQHDV2 <./USARTn_ss.sdf, line 6227>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][2]  of module DRQHDV2 <./USARTn_ss.sdf, line 6249>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][3]  of module DRQHDV2 <./USARTn_ss.sdf, line 6271>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][4]  of module DRQHDV2 <./USARTn_ss.sdf, line 6293>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][5]  of module DRQHDV2 <./USARTn_ss.sdf, line 6315>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][6]  of module DRQHDV2 <./USARTn_ss.sdf, line 6337>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][7]  of module DRQHDV2 <./USARTn_ss.sdf, line 6359>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][8]  of module DRQHDV2 <./USARTn_ss.sdf, line 6381>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][9]  of module DRQHDV2 <./USARTn_ss.sdf, line 6403>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_fifo_mem_reg[1][10]  of module DRQHDV2 <./USARTn_ss.sdf, line 6425>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_r_pnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 6447>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_r_pnt_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 6469>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_w_pnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 6491>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_rx_inst_w_pnt_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 6513>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.FIFO_tx_inst_empty_int_sync_reg of module DSNQHDV2 <./USARTn_ss.sdf, line 6535>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 6557>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 6579>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[2]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6605>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[3]  of module DRQHDV2 <./USARTn_ss.sdf, line 6629>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[4]  of module DRQHDV2 <./USARTn_ss.sdf, line 6651>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[5]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6677>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[6]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6705>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[7]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6733>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[8]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6761>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\FIFO_tx_inst_fifo_buf_reg[9]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6789>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.413) (-0.097)) of instance usart_test_tb.uut.FIFO_tx_inst_full_int_sync_reg of module DRQHDV2 <./USARTn_ss.sdf, line 6813>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\FIFO_tx_inst_r_pnt_reg[0]  of module DRQNHDV2 <./USARTn_ss.sdf, line 6835>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\FIFO_tx_inst_r_pnt_reg[1]  of module DRQNHDV2 <./USARTn_ss.sdf, line 6857>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\FIFO_tx_inst_w_pnt_reg[0]  of module DRQNHDV2 <./USARTn_ss.sdf, line 6879>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\FIFO_tx_inst_w_pnt_reg[1]  of module DRQNHDV2 <./USARTn_ss.sdf, line 6901>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\Temp_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6927>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\Temp_reg[1]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6955>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\Temp_reg[2]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 6983>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\Temp_reg[3]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7011>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7039>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[1]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7067>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[2]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7095>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[3]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7123>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[4]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7151>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[5]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7179>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[6]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7207>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[7]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7235>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[8]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7263>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[9]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7291>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[10]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7319>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UBRRn_reg[11]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7347>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnA_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7375>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnA_reg[1]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7403>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\UCSRnA_reg[3]  of module DRQHDV2 <./USARTn_ss.sdf, line 7427>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\UCSRnA_reg[6]  of module DRQHDV2 <./USARTn_ss.sdf, line 7449>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7475>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\UCSRnB_reg[2]  of module DRQHDV2 <./USARTn_ss.sdf, line 7499>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[3]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7525>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[4]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7553>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[5]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7581>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[6]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7609>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnB_reg[7]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7637>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnC_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7665>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\UCSRnC_reg[1]  of module DSNQHDV2 <./USARTn_ss.sdf, line 7689>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.264) (-0.023)) of instance usart_test_tb.uut.\UCSRnC_reg[2]  of module DSNQNHDV2 <./USARTn_ss.sdf, line 7711>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnC_reg[3]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7737>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnC_reg[4]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7765>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\UCSRnC_reg[5]  of module DRQNHDV2 <./USARTn_ss.sdf, line 7789>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\UCSRnC_reg[6]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 7815>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\UCSRnC_reg[7]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 7843>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.rc_done_reg of module DRQNHDV2 <./USARTn_ss.sdf, line 7867>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.\rc_state_reg[0]  of module DRQNHDV2 <./USARTn_ss.sdf, line 7889>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.\rc_state_reg[1]  of module DRQNHDV2 <./USARTn_ss.sdf, line 7911>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\rx_baud_cnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 7951>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.\rx_baud_cnt_reg[1]  of module DRQNHDV2 <./USARTn_ss.sdf, line 7973>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.\rx_baud_cnt_reg[2]  of module DRQNHDV2 <./USARTn_ss.sdf, line 7995>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.407) (-0.105)) of instance usart_test_tb.uut.\rx_baud_cnt_reg[3]  of module DRQNHDV2 <./USARTn_ss.sdf, line 8017>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\rx_sh_reg_reg[0]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 8107>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\rx_sh_reg_reg[1]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 8135>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\rx_sh_reg_reg[2]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 8163>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[3]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8191>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[4]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8219>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[5]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8247>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[6]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8275>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.679) (-0.491)) of instance usart_test_tb.uut.\rx_sh_reg_reg[7]  of module EDRNQHDV0 <./USARTn_ss.sdf, line 8303>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.\rx_sh_reg_reg[8]  of module DRQNHDV2 <./USARTn_ss.sdf, line 8327>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[9]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8353>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RDN) (COND (ENABLE_D_AND_E===1) (posedge CK)) (0.697) (-0.455)) of instance usart_test_tb.uut.\rx_sh_reg_reg[10]  of module EDRNQNHDV4 <./USARTn_ss.sdf, line 8381>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\rx_sync_reg[0]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8405>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\rx_sync_reg[1]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8427>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.408) (-0.106)) of instance usart_test_tb.uut.tr_done_reg of module DRQNHDV2 <./USARTn_ss.sdf, line 8449>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.tr_state_reg of module DRQHDV2 <./USARTn_ss.sdf, line 8471>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\tx_baud_cnt_reg[0]  of module DRQHDV2 <./USARTn_ss.sdf, line 8493>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\tx_baud_cnt_reg[1]  of module DRQHDV2 <./USARTn_ss.sdf, line 8515>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\tx_baud_cnt_reg[2]  of module DRQHDV2 <./USARTn_ss.sdf, line 8537>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (negedge RD) (COND (ENABLE_D===1) (posedge CK)) (0.403) (-0.091)) of instance usart_test_tb.uut.\tx_baud_cnt_reg[3]  of module DRQHDV2 <./USARTn_ss.sdf, line 8559>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[0]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8645>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[1]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8667>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[2]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8689>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[3]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8711>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[4]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8733>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[5]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8755>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[6]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8777>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[7]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8799>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[8]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8821>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[9]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8843>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge SDN) (COND (ENABLE_NOT_D===1) (posedge CK)) (0.238) (-0.01)) of instance usart_test_tb.uut.\tx_sh_reg_reg[10]  of module DSNQHDV2 <./USARTn_ss.sdf, line 8865>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17650__5526 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 10266>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17681__6783 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 10873>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17688__5122 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 10978>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17689__8246 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 11008>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17726__1705 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 11442>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17804__1617 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 12547>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17805__2802 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 12577>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17806__1705 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 12607>.
+xmelab: *W,SDFCTE: Module AOI221HDVL of instance usart_test_tb.uut.g17808__8246 does not match SDF celltype of AOI221HDV2, skipping annotation <./USARTn_ss.sdf, line 12667>.
+xmelab: *W,SDFCTE: Module OAI32HDV0 of instance usart_test_tb.uut.g17811__1881 does not match SDF celltype of OAI32HDV2, skipping annotation <./USARTn_ss.sdf, line 12723>.
+xmelab: *W,SDFCTE: Module INHDV0 of instance usart_test_tb.uut.g18038 does not match SDF celltype of INHDV2, skipping annotation <./USARTn_ss.sdf, line 14554>.
+	Annotation completed with 0 Errors and 220 Warnings
+	SDF statistics: 
+		 No. of Pathdelays = 5030    	 No. of Disabled Pathdelays = 0        Annotated = 94.73% (4765/5030) 
+		 No. of Tchecks    = 1030    	 No. of Disabled Tchecks    = 0        Annotated = 85.53% (881/1030) 
+				        Total(T) 	   Disabled(D) 	    Annotated(A)	  Percentage(A/(T-D))
+		 Path Delays	          5030	             0	              4765	                 94.73
+		      $width	           469	             0	               469	                100.00
+		  $setuphold	           561	             0	               412	                 73.44
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.usart_test_tb:v <0x3978f5d9>
+			streams:  16, words: 14905
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  675      80
+		UDPs:                     164       3
+		Primitives:              1779       8
+		Timing outputs:           675      56
+		Registers:                171      24
+		Scalar wires:            1431       -
+		Expanded wires:            26       3
+		Vectored wires:             5       -
+		Always blocks:              1       1
+		Initial blocks:             5       5
+		Cont. assignments:          1       9
+		Pseudo assignments:        10       -
+		Timing checks:           1591     525
+		Interconnect:            2110      18
+		Delayed tcheck signals:   515     152
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.usart_test_tb:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/cadence/XCELIUMMAIN23.09.001/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm usart_test_tb.uut.ireset usart_test_tb.uut.cp2 usart_test_tb.uut.ram_Addr usart_test_tb.uut.ramre usart_test_tb.uut.ramwe usart_test_tb.uut.dbus_in usart_test_tb.uut.DDR_XCKn usart_test_tb.uut.XCKn_i usart_test_tb.uut.RxDn_i usart_test_tb.uut.irqack usart_test_tb.uut.irqack_addr usart_test_tb.uut.out_en usart_test_tb.uut.dbus_out usart_test_tb.uut.UMSEL usart_test_tb.uut.XCKn_o usart_test_tb.uut.TxDn_o usart_test_tb.uut.RXENn usart_test_tb.uut.TXENn usart_test_tb.uut.RxcIRQ usart_test_tb.uut.TxcIRQ usart_test_tb.uut.UdreIRQ usart_test_tb.uut.UStBIRQ usart_test_tb.uut.UCSRnA usart_test_tb.uut.UCSRnB usart_test_tb.uut.UCSRnC usart_test_tb.uut.UBRRn usart_test_tb.uut.Temp usart_test_tb.uut.tx_bitcnt usart_test_tb.uut.tx_baud_cnt usart_test_tb.uut.tx_samp usart_test_tb.uut.tx_samp_delay usart_test_tb.uut.tx_fifo_full usart_test_tb.uut.tx_fifo_empty usart_test_tb.uut.tx_clk_en usart_test_tb.uut.tx_sh_reg usart_test_tb.uut.tr_state usart_test_tb.uut.tr_done usart_test_tb.uut.FIFO_tx_inst_w_pnt usart_test_tb.uut.FIFO_tx_inst_r_pnt usart_test_tb.uut.FIFO_tx_inst_fifo_buf usart_test_tb.uut.FIFO_tx_inst_dout_sync usart_test_tb.uut.rx_baud_cnt usart_test_tb.uut.rx_bitcnt usart_test_tb.uut.rx_clk_en usart_test_tb.uut.rx_sh_reg usart_test_tb.uut.rx_sync usart_test_tb.uut.rc_state usart_test_tb.uut.rc_done usart_test_tb.uut.FIFO_rx_inst_w_pnt usart_test_tb.uut.FIFO_rx_inst_r_pnt usart_test_tb.uut.FIFO_rx_inst_n_194 usart_test_tb.uut.@{\FIFO_rx_inst_fifo_mem[1] } usart_test_tb.uut.@{\FIFO_rx_inst_fifo_mem[0] } usart_test_tb.uut.XCK_int usart_test_tb.uut.rst_status
+Created probe 1
+xcelium> reset
+Loaded snapshot worklib.usart_test_tb:v
+xcelium> run
+Simulation complete via $finish(1) at time 10 MS + 0
+./usart_test_tb.v:99 		$finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	23.09-s001: Exiting on Apr 17, 2025 at 23:17:53 +07  (total: 00:15:19)

@@ -1,0 +1,135 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+#
+# Groups
+#
+if {[catch {group get -using [list {Param}]}]} {
+set createdGroup([list {Param}]) 1
+catch {group new -name Param -overlay 0}
+}
+if {[info exists createdGroup([list {Param}])]} {
+group using Param
+group set -overlay 0
+group set -comment {}
+group clear 0 end
+group insert \
+    [subst  {[format {spi_slave_tb.uut.SEND_DATA}]} ] \
+    [subst  {[format {spi_slave_tb.uut.LOAD_DATA}]} ] \
+    [subst  {[format {spi_slave_tb.uut.LOAD_CMD}]} ] \
+    [subst  {[format {spi_slave_tb.uut.IDLE}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_WRITE_PLAIN}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_WRITE_KEY}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_WRITE_IV}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_START_AES}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_READ_STATUS}]} ] \
+    [subst  {[format {spi_slave_tb.uut.CMD_READ_CIPHER}]} ]
+}
+
+
+set groupId0 [waveform add -groups Param]
+waveform hierarchy collapse $groupId0
+
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.rst}]}
+	} ]]
+waveform format $id -color #0099ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.clk}]}
+	} ]]
+waveform format $id -color #00ffff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.ciphertext[127:0]}]}
+	} ]]
+waveform format $id -color #0099ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.key[127:0]}]}
+	} ]]
+waveform format $id -color #ff00ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.iv[127:0]}]}
+	} ]]
+waveform format $id -color #ff00ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.plaintext[127:0]}]}
+	} ]]
+waveform format $id -color #ff00ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.sck}]}
+	} ]]
+waveform format $id -color #00ffff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.ss}]}
+	} ]]
+waveform format $id -color #0099ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.cmd[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.state[1:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.bit_cnt[3:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.miso_reg}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.start_encryption}]}
+	} ]]
+waveform format $id -color #ff00ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.encryption_done}]}
+	} ]]
+waveform format $id -color #0099ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.new_message}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.mosi}]}
+	} ]]
+waveform format $id -color #0099ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.rx_buffer[127:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.spi_rx_byte[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.byte_cnt[4:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.spi_rx_done}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.tx_buffer[127:0]}]}
+	} ]]
+waveform format $id -radix %b
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.miso_cnt[7:0]}]}
+	} ]]
+waveform format $id -radix %d
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.uut.miso}]}
+	} ]]
+waveform format $id -color #ff00ff
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.tmp[7:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {spi_slave_tb.received_ct[127:0]}]}
+	} ]]
+
+waveform xview limits 166555330ps 273881670ps

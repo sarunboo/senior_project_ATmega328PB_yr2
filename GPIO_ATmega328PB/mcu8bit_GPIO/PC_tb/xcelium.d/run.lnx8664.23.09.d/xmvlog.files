@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/nfs/mcu8b/sarun/mcu8bit_GPIO/PC_tb/Port_C.sv
+/nfs/mcu8b/sarun/mcu8bit_GPIO/PC_tb/rg_md.sv
+/nfs/mcu8b/sarun/mcu8bit_GPIO/PC_tb/synchronizer.sv
+/nfs/mcu8b/sarun/mcu8bit_GPIO/PC_tb/IO_Port.sv
+/nfs/mcu8b/sarun/mcu8bit_GPIO/PC_tb/gpio_PC_tb.v

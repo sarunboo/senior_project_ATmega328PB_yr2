@@ -1,0 +1,163 @@
+s1(17Apr2025:04:18:53):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s2(17Apr2025:04:19:28):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s3(17Apr2025:04:19:49):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s4(17Apr2025:04:22:00):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s5(17Apr2025:04:32:25):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s6(17Apr2025:04:32:46):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s7(17Apr2025:04:32:51):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s8(17Apr2025:04:33:26):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s9(17Apr2025:04:33:38):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s10(17Apr2025:04:33:41):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s11(17Apr2025:04:36:56):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s12(17Apr2025:04:37:05):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s13(17Apr2025:04:37:06):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s14(17Apr2025:05:03:35):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s15(17Apr2025:05:04:41):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s16(17Apr2025:05:10:26):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s17(17Apr2025:14:22:03):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s18(17Apr2025:14:22:13):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s19(17Apr2025:14:44:54):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s20(17Apr2025:14:45:37):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s21(17Apr2025:14:46:47):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s22(17Apr2025:15:15:31):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s23(17Apr2025:15:22:41):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s24(17Apr2025:15:24:02):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s25(17Apr2025:15:49:40):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s26(20Apr2025:21:48:35):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s27(20Apr2025:21:51:53):  xrun SPI_slave.sv SPI_slave_tb.sv -access +rwc -gui 
+s28(20Apr2025:21:54:43):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s29(20Apr2025:21:55:19):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s30(20Apr2025:21:55:32):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s31(20Apr2025:21:56:40):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s32(20Apr2025:21:57:24):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s33(20Apr2025:21:59:22):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s34(20Apr2025:22:05:43):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s35(20Apr2025:22:05:52):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s36(20Apr2025:22:06:46):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s37(20Apr2025:22:07:22):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s38(20Apr2025:22:19:13):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s39(20Apr2025:22:33:17):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s40(20Apr2025:22:33:35):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s41(20Apr2025:22:36:32):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s42(20Apr2025:22:37:56):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s43(20Apr2025:22:39:04):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s44(20Apr2025:22:40:53):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s45(20Apr2025:22:41:38):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s46(20Apr2025:22:42:13):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s47(20Apr2025:22:44:21):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s48(20Apr2025:22:46:46):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s49(20Apr2025:22:48:53):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s50(20Apr2025:22:50:31):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s51(20Apr2025:22:53:33):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s52(20Apr2025:22:58:16):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s53(20Apr2025:22:59:51):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s54(20Apr2025:23:01:43):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s55(20Apr2025:23:01:47):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s56(20Apr2025:23:02:21):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s57(20Apr2025:23:04:03):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s58(20Apr2025:23:04:53):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s59(20Apr2025:23:12:35):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s60(20Apr2025:23:15:15):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s61(20Apr2025:23:25:25):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s62(20Apr2025:23:42:17):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s63(20Apr2025:23:44:08):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s64(20Apr2025:23:46:10):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s65(20Apr2025:23:50:42):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s66(20Apr2025:23:50:51):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s67(20Apr2025:23:52:49):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s68(20Apr2025:23:56:04):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s69(20Apr2025:23:56:44):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s70(21Apr2025:00:03:05):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s71(21Apr2025:00:03:53):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s72(21Apr2025:00:05:38):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s73(21Apr2025:00:09:36):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s74(21Apr2025:00:10:34):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s75(21Apr2025:00:10:58):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s76(21Apr2025:00:11:27):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s77(21Apr2025:00:14:09):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s78(21Apr2025:00:17:57):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s79(21Apr2025:00:20:28):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s80(21Apr2025:00:39:17):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s81(21Apr2025:00:42:46):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s82(21Apr2025:00:46:27):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s83(21Apr2025:00:50:55):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s84(21Apr2025:00:55:24):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s85(21Apr2025:00:58:29):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s86(21Apr2025:00:59:52):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s87(21Apr2025:01:00:17):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s88(21Apr2025:01:01:01):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s89(21Apr2025:01:02:24):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s90(21Apr2025:01:03:41):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s91(21Apr2025:01:06:52):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s92(21Apr2025:01:12:45):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s93(21Apr2025:01:13:36):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s94(21Apr2025:01:16:53):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s95(21Apr2025:01:21:51):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s96(21Apr2025:01:24:44):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s97(21Apr2025:01:25:26):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s98(21Apr2025:01:35:25):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s99(21Apr2025:01:35:30):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s100(21Apr2025:01:37:48):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s101(21Apr2025:01:39:39):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s102(21Apr2025:01:42:11):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s103(21Apr2025:01:46:04):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s104(21Apr2025:01:46:40):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s105(21Apr2025:01:47:09):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s106(21Apr2025:02:18:52):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s107(21Apr2025:02:25:23):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s108(21Apr2025:02:25:55):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s109(21Apr2025:02:26:21):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s110(21Apr2025:02:29:03):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s111(21Apr2025:02:30:28):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s112(21Apr2025:02:32:31):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s113(21Apr2025:02:45:54):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s114(21Apr2025:02:47:13):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s115(21Apr2025:02:47:15):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s116(21Apr2025:02:47:52):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s117(21Apr2025:02:47:54):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s118(21Apr2025:02:48:09):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s119(21Apr2025:02:49:45):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s120(21Apr2025:02:50:01):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s121(21Apr2025:02:50:12):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s122(21Apr2025:02:50:22):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s123(21Apr2025:02:50:30):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s124(21Apr2025:02:51:47):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s125(21Apr2025:02:52:00):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s126(21Apr2025:02:52:57):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s127(21Apr2025:02:54:21):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s128(21Apr2025:02:55:06):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s129(21Apr2025:02:56:04):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s130(21Apr2025:02:56:45):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s131(21Apr2025:02:59:28):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s132(21Apr2025:03:02:41):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s133(21Apr2025:03:03:29):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s134(21Apr2025:03:15:43):  xrun SPI_slave.v SPI_slave_tb.v -access +rwc -gui 
+s135(21Apr2025:03:24:02):  xrun AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s136(21Apr2025:03:24:50):  xrun AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s137(21Apr2025:03:25:09):  xrun AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s138(21Apr2025:03:25:23):  xrun AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s139(21Apr2025:03:25:41):  xrun AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s140(21Apr2025:03:26:07):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s141(21Apr2025:03:30:51):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s142(21Apr2025:03:32:17):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s143(21Apr2025:03:33:36):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s144(21Apr2025:03:34:08):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s145(21Apr2025:03:35:47):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s146(21Apr2025:03:36:19):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s147(21Apr2025:03:38:42):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s148(21Apr2025:03:38:49):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s149(21Apr2025:03:39:07):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s150(21Apr2025:03:39:51):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s151(21Apr2025:03:40:05):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s152(21Apr2025:03:43:47):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s153(21Apr2025:03:45:42):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s154(21Apr2025:03:47:41):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s155(21Apr2025:22:26:58):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s156(21Apr2025:22:49:22):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s157(21Apr2025:22:55:13):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s158(21Apr2025:22:56:06):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s159(21Apr2025:23:01:34):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s160(21Apr2025:23:07:51):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s161(21Apr2025:23:28:17):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 
+s162(23Apr2025:00:07:40):  xrun AES_main.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v AES_tb.v -access +rwc -gui 
+s163(23Apr2025:00:31:29):  xrun AES_TOP.v AES_main.v SPI_slave.v cbc_logic.v aes_key_expand.v round.v sbox.v shiftrows.v subbytes.v mixcolumn.v lastround.v top_tb.v -access +rwc -gui 

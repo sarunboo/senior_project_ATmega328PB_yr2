@@ -1,0 +1,27 @@
+xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s001: Started on Apr 22, 2025 at 16:53:25 +07
+xrun
+	FIFO.sv
+	USART_Clk.sv
+	USARTn.sv
+	usart_test_tb6.v
+	-access +rwc
+	-gui
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/cadence/XCELIUMMAIN23.09.001/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm usart_test_tb3.core_ireset usart_test_tb3.cp2 usart_test_tb3.core_dbusout usart_test_tb3.core_ramwe usart_test_tb3.core_ramre usart_test_tb3.core_ramadr usart_test_tb3.core_irqackad usart_test_tb3.core_irqack usart_test_tb3.USARTn_1_inst.UBRRn usart_test_tb3.USARTn_1_inst.UCSRnA usart_test_tb3.USARTn_1_inst.UCSRnB usart_test_tb3.USARTn_1_inst.UCSRnC usart_test_tb3.UMSEL1 usart_test_tb3.USARTn_1_inst.XCKn_i usart_test_tb3.DDR_XCK1 usart_test_tb3.USARTn_1_inst.XCKn_o usart_test_tb3.USARTn_1_inst.tx_ris_e usart_test_tb3.USARTn_1_inst.TxDn_o usart_test_tb3.TXEN1 usart_test_tb3.USARTn_1_inst.RxDn_i usart_test_tb3.USARTn_1_inst.tx_fal_e usart_test_tb3.USARTn_1_inst.rx_sh_reg usart_test_tb3.RXEN1 usart_test_tb3.USARTn_1_inst.rc_state usart_test_tb3.USARTn_1_inst.rx_filt usart_test_tb3.USARTn_1_inst.rx_sync usart_test_tb3.USARTn_1_inst.rx_bitcnt usart_test_tb3.USARTn_1_inst.rx_baud_cnt usart_test_tb3.USARTn_1_inst.tx_samp usart_test_tb3.USARTn_1_inst.rx_samp usart_test_tb3.data_bus usart_test_tb3.d_en_bus usart_test_tb3.USARTn_0_inst.UBRRn usart_test_tb3.USARTn_0_inst.UCSRnA usart_test_tb3.USARTn_0_inst.UCSRnB usart_test_tb3.USARTn_0_inst.UCSRnC usart_test_tb3.UMSEL0 usart_test_tb3.USARTn_0_inst.XCKn_i usart_test_tb3.DDR_XCK0 usart_test_tb3.USARTn_0_inst.XCKn_o usart_test_tb3.USARTn_0_inst.TxDn_o usart_test_tb3.TXEN0 usart_test_tb3.USARTn_0_inst.RxDn_i usart_test_tb3.RXEN0 usart_test_tb3.USARTn_0_inst.rc_state usart_test_tb3.USARTn_0_inst.rx_filt usart_test_tb3.USARTn_0_inst.rx_sync usart_test_tb3.USARTn_0_inst.rx_bitcnt usart_test_tb3.USARTn_0_inst.rx_samp usart_test_tb3.USARTn_0_inst.rx_sh_reg usart_test_tb3.USARTn_0_inst.tx_samp usart_test_tb3.USARTn_0_inst.tx_ris_e usart_test_tb3.USARTn_0_inst.tx_fal_e
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 10 MS + 0
+./usart_test_tb6.v:132 		$finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	23.09-s001: Exiting on Apr 22, 2025 at 16:56:28 +07  (total: 00:03:03)

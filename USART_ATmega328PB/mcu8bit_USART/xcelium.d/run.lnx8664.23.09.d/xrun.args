@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+FIFO.sv
+USART_Clk.sv
+USARTn.sv
+usart_test_tb6.v
+-access
++rwc
+-gui

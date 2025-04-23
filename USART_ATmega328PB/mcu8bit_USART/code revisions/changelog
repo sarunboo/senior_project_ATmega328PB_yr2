@@ -1,0 +1,121 @@
+rev0: original source code
+
+rev1: fix bug where DORn bit not resetting to default state when reset signal active
+
+	> add UCSRnA[3if (UCSRnB[3] || (tr_state == TR_ST_TRANSMIT) || ((tr_state == TR_ST_TRANSMIT) && !tx_fifo_empty)) beginif (UCSRnB[3] || (tr_state == TR_ST_TRANSMIT) || ((tr_state == TR_ST_TRANSMIT) && !tx_fifo_empty)) begin] <= 1'b0 ; // DORn (NEWLY ADDED BY SARUN) in STATUS always block
+	> add UCSRnA[3] <= 1'b0; // DORn (NEWLY ADDED BY SARUN) in STATUS always block
+
+rev2: fix bug where slave not being able to receive data from master in synchronous mode
+
+	> add the following condition to RC_ST_START case in Receive state always block
+		> if (UCSRnC[7:6] == 2'b01) && (DDR_XCKn == 1'b0) begin
+		> then move to next state without waiting for rx_samp (no rx_samp in slave)
+
+rev3: fix bug where full line in FIFO doesn't work correctly in case of DEPTH = 1 (TX FIFO)
+
+	> uncommented an old generate block in FIFO code (assign full_int)
+
+rev4: fix bug where TX misfunction when disabling TXEN
+
+	> add extra condition to tx_fifo_re signals in order to make tx_fifo read even TXEN is 0
+		> assign tx_fifo_re = (((tr_state == TR_ST_IDLE) && UCSRnB[3]) || tr_done );
+	> add extra condition in tx_enable_clk block in order to make tx_en_clk still be 1 even if TXEN is 0
+		> if (UCSRnB[3] || (tr_state == TR_ST_TRANSMIT) || ((tr_state == TR_ST_TRANSMIT) && !tx_fifo_empty)) begin
+
+rev5: fix bug where RX FIFO did not flush correctly when RXEN is disable and change code to .sv 
+
+	> edit the condition of disable_receiver signal in USARTn code
+		> ram_Addr == UCSRnA_Address changes to ram_Addr == UCSRnB_Address
+	> add extra function on flushing in FIFO code
+		> if(flush)begin
+			w_pnt <= {LP_CNT_WIDTH{1'b0}};
+			r_pnt <= {LP_CNT_WIDTH{1'b0}};
+			for(i=0;i<DEPTH;i=i+1) begin
+				fifo_mem[i] <= {WIDTH{1'b0}};
+			end
+		  end
+	> change from .v to .sv in order to work with synthesis script
+
+rev6: adjust code, if RX is disabled during RC_ST_RECEIVE the state will return to RC_ST_IDLE
+
+	> add extra condition to change state in RC_ST_RECEIVE state
+		> if(rx_bitcnt == 4'b0000 || disable_receiver) begin
+
+rev7: adjust code, weird condition (receive function but use tx_fifo for if-else condition? may cause bug)
+
+	> change tx_fifo_full to rx_fifo_full in Receive_Done 
+	> change tx_fifo_full to rx_fifo_full in rx_fifo_wr
+
+rev8: fix bug where rst_status stuck in 1 making Error Flags work improperly
+
+	> change condition of rst_status signal
+		> if (ram_Addr == UCSRnA_Address && ramwe) begin	// (ALTERED BY SARUN [rev8])
+			UCSRnA[1:0] <= dbus_in[1:0];
+			rst_status <= 1'b1 ;
+		  end else begin
+			rst_status <= 1'b0 ;
+		  end
+rev9: adjust code, make FIFO output zero when read while empty (normally it will output the first memory)
+
+	> assign dout  = 	((DEPTH==2 && SYNC_OUT==0) && (empty_int == 1)) ? {WIDTH{1'b0}} :
+			 	((DEPTH==1 && SYNC_OUT==1) && (empty_int_sync == 1)) ? {WIDTH{1'b0}} :
+			 	(SYNC_OUT == 1) ? dout_sync : 
+			 	(DEPTH==1) ? fifo_buf : 
+			 	fifo_mem[r_pnt[LP_CNT_WIDTH-2:0]];
+
+rev10: fix RTL code, removing unintended latch
+
+	> fixed block #1
+	always @(*)
+	begin : Data_Register
+		if (!ireset) begin	// Reset
+			UDRn <= 8'b00000000 ;
+		end else begin	// (remove latch, ADJUSTED BY SARUN [rev10])
+			// if ((ram_Addr == UDRn_Address) && ramre)begin
+			// 	UDRn <= UDRn ;
+			// end else begin
+			// 	UDRn <= rx_fifo_out[7:0] ;
+			// end
+			UDRn <= rx_fifo_out[7:0] ;
+		end
+	end
+
+	> fixed block #2
+	always@(*)
+	begin : tx_enable_clk
+		if (UCSRnB[3] || (tr_state == TR_ST_TRANSMIT) || ((tr_state == TR_ST_TRANSMIT) && !tx_fifo_empty)) begin	// (ALTERED BY SARUN [rev4])
+			tx_en_clk <=  1'b1;
+		end else if (tx_fifo_empty) begin
+			tx_en_clk <=  1'b0;
+		end else begin	// (remove latch, ADJUSTED BY SARUN [rev10])
+			tx_en_clk <= 1'b0 ;
+		// end else begin
+		//  	tx_en_clk <= 1'b0 ;
+		end
+	end
+
+rev11: fix RTL code, compressed if-else in order to try to fix unconstrained path
+
+	> fixed block
+	always @(posedge cp2 or negedge ireset)
+	begin : Transmit_Done
+		if (!ireset) begin	// Reset
+			tr_done <= 1'b0;
+		end else begin	// (compressed if-else, ALTERED BY SARUN [rev11])
+			if (tr_state == TR_ST_TRANSMIT && tx_bitcnt == 4'b0000) begin
+				tr_done <= 1'b1;
+			end else begin
+				tr_done <= 1'b0;
+			end
+		end
+	end
+
+rev12: fix rev5 and rev1 changes, in order to fix multiple driver in synthesis problem
+
+	> fixed 'fifo_wr' block, moved flushing function from 'pointer_update' block
+	> fixed 'WR_UCSRnA_REG' block, moved UCSRnA[3] bit reset function from 'STATUS' block
+
+
+note: latest has not been added to the local ATMEGA328PB-main code in PC (current is rev11)
+
+

@@ -1,0 +1,35 @@
+s1(31Mar2025:15:55:59):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -access +rwc -gui 
+s2(31Mar2025:16:00:33):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s3(31Mar2025:16:04:29):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -access +rwc -gui 
+s4(31Mar2025:16:05:50):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s5(31Mar2025:16:07:32):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s6(31Mar2025:16:09:12):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s7(31Mar2025:16:14:41):  xrun USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s8(31Mar2025:16:17:21):  xrun xrun USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s9(31Mar2025:16:17:25):  xrun xrun USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s10(31Mar2025:16:18:02):  xrun xrun USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s11(31Mar2025:16:19:01):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s12(31Mar2025:16:20:34):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s13(31Mar2025:16:20:59):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s14(31Mar2025:16:25:00):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s15(31Mar2025:16:40:05):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s16(31Mar2025:16:51:54):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s17(03Apr2025:15:13:46):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s18(03Apr2025:15:48:30):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s19(03Apr2025:15:48:58):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s20(03Apr2025:17:15:01):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s21(03Apr2025:17:51:21):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s22(03Apr2025:18:03:53):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s23(03Apr2025:18:11:24):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s24(03Apr2025:19:06:43):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s25(03Apr2025:20:46:06):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s26(10Apr2025:18:20:20):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb3.v -access +rwc -gui 
+s27(10Apr2025:18:20:27):  xrun FIFO.sv USART_Clk.sv USARTn.sv usart_test_tb.v -access +rwc -gui 
+s28(10Apr2025:18:25:08):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s29(10Apr2025:21:07:52):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s30(17Apr2025:21:19:39):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s31(17Apr2025:21:35:30):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s32(17Apr2025:22:48:49):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s33(17Apr2025:22:55:10):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s34(17Apr2025:23:01:54):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 
+s35(17Apr2025:23:02:34):  xrun -timescale 1ns/10ps USARTn_netlist.v usart_test_tb.v -v scc013ull_hd_rvt.v -access +rwc -define SDF_TEST -mess -gui 

@@ -1,0 +1,68 @@
+xrun(64): 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s001: Started on Apr 23, 2025 at 00:31:29 +07
+xrun
+	AES_TOP.v
+	AES_main.v
+	SPI_slave.v
+	cbc_logic.v
+	aes_key_expand.v
+	round.v
+	sbox.v
+	shiftrows.v
+	subbytes.v
+	mixcolumn.v
+	lastround.v
+	top_tb.v
+	-access +rwc
+	-gui
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top_tb
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                714      16
+		Registers:              599      95
+		Scalar wires:            13       -
+		Expanded wires:        1600     200
+		Vectored wires:        1060       -
+		Always blocks:          517      13
+		Initial blocks:          21      12
+		Cont. assignments:      414      46
+		Pseudo assignments:      25       -
+		Process Clocks:         313       3
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.top_tb:v
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/cadence/XCELIUMMAIN23.09.001/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm top_tb.uut.mosi top_tb.uut.sck top_tb.uut.ss top_tb.uut.clk top_tb.uut.rst top_tb.uut.new_message top_tb.uut.start_encrypt top_tb.uut.key top_tb.uut.iv top_tb.uut.pt top_tb.uut.ct top_tb.uut.aes_start top_tb.uut.aes_key top_tb.uut.aes_in top_tb.uut.aes_out top_tb.uut.aes_done top_tb.uut.miso top_tb.uut.spi_core.state top_tb.uut.spi_core.cmd top_tb.tmp top_tb.received_ct top_tb.uut.cbc_core.aes_done top_tb.uut.cbc_core.start top_tb.uut.cbc_core.aes_start top_tb.uut.cbc_core.busy top_tb.uut.cbc_core.ciphertext top_tb.uut.cbc_core.done top_tb.uut.cbc_core.iv top_tb.uut.cbc_core.key top_tb.uut.cbc_core.new_message top_tb.uut.cbc_core.prev_cipher top_tb.uut.cbc_core.xored_input
+Created probe 1
+xcelium> reset
+Loaded snapshot worklib.top_tb:v
+xcelium> run
+Starting AES_TOP Testbench...
+Received Ciphertext: 9782b8e6186c948bcaa6fb177449444e
+Test Passed: Ciphertext matches expected output
+Received Ciphertext: becccaf9d1bb403f5f76ef6e24cf92ab
+Test Passed: Ciphertext matches expected output
+Received Ciphertext: a99d81a84b166e88ba60ca9d469ad783
+Test Passed: Ciphertext matches expected output
+Received Ciphertext: b2773969d4cd7fdb3702768d0377e0d8
+Test Passed: Ciphertext matches expected output
+Received Ciphertext: f4b28ace0d3065a5cc11565d925f988b
+Test Passed: Ciphertext matches expected output
+Simulation stopped via $stop(1) at time 233500 NS + 0
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	23.09-s001: Exiting on Apr 23, 2025 at 00:34:10 +07  (total: 00:02:41)

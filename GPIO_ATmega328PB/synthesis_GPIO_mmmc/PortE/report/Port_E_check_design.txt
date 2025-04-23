@@ -1,0 +1,246 @@
+
+ 	 Check Design Report (c)
+	 ------------------- 
+No subdesign's name is greater than 1.5k in length.
+
+ Feedthrough Module(s)
+ -------------------------
+No feed through module in 'Port_E'
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'Port_E'
+
+No empty modules in design 'Port_E'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'Port_E'
+
+design 'Port_E' has the following unloaded port(s)
+port:Port_E/dbus_in[7]
+port:Port_E/dbus_in[6]
+port:Port_E/dbus_in[5]
+port:Port_E/dbus_in[4]
+port:Port_E/RSTDISBL
+port:Port_E/SCK1_OUT
+Total number of unloaded ports in design 'Port_E' : 6
+
+ Unloaded Combinational Pin(s)
+ -------------------------------
+No unloaded combinational element in 'Port_E'
+
+ Assigns
+ ------- 
+Encountered an assign statement at port 'port:Port_E/dbus_out[7]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/dbus_out[6]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/dbus_out[5]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/dbus_out[4]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/DIE_o[3]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/DIE_o[2]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/DIE_o[1]' in design Port_E
+Encountered an assign statement at port 'port:Port_E/DIE_o[0]' in design Port_E
+Total number of assign statements in design 'Port_E' : 8
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+No undriven combinational pin in 'Port_E'
+
+No undriven sequential pin in 'Port_E'
+
+The following hierarchical pin(s) in design 'Port_E' are undriven
+hpin:Port_E/IO_Port_E_inst/dbus_in[7] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/dbus_in[6] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/dbus_in[5] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/dbus_in[4] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/wdata[7] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/wdata[6] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/wdata[5] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/wdata[4] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/tog 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_portx_inst/wdata[7] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_portx_inst/wdata[6] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_portx_inst/wdata[5] 	 (fanout : 0)
+hpin:Port_E/IO_Port_E_inst/rg_md_portx_inst/wdata[4] 	 (fanout : 0)
+Total number of hierarchical undriven pins in design 'Port_E' : 13
+
+No undriven port in 'Port_E'
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'Port_E'
+
+No multidriven sequential pin in 'Port_E'
+
+No multidriven hierarchical pin in 'Port_E'
+
+No multidriven ports in 'Port_E'
+
+No multidriven unloaded nets in 'Port_E'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'Port_E'
+
+No constant sequential pin(s) in design 'Port_E'
+
+No constant hierarchical pin(s) in design 'Port_E'
+
+design 'Port_E' has the following constant port(s)
+port:Port_E/dbus_out[7]
+port:Port_E/dbus_out[6]
+port:Port_E/dbus_out[5]
+port:Port_E/dbus_out[4]
+Total number of constant port(s) in design 'Port_E' : 4
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'Port_E'
+No preserved sequential instance(s) in design 'Port_E'
+No preserved hierarchical instance(s) in design 'Port_E'
+
+  Physical only instances(s)
+  ----------------
+No physical only instance(s) in design 'Port_E'
+
+  Logical only instance(s) and linked libcells
+    -----------------------------------------
+design 'Port_E' has following logical only instance(s)
+inst:Port_E/IO_Port_E_inst/g518__7098
+inst:Port_E/IO_Port_E_inst/g519__6131
+inst:Port_E/IO_Port_E_inst/g520__1881
+inst:Port_E/IO_Port_E_inst/g521__5115
+inst:Port_E/IO_Port_E_inst/g522__7482
+inst:Port_E/IO_Port_E_inst/g523__4733
+inst:Port_E/IO_Port_E_inst/g524__6161
+inst:Port_E/IO_Port_E_inst/g525__9315
+inst:Port_E/IO_Port_E_inst/g526__9945
+inst:Port_E/IO_Port_E_inst/g527__2883
+inst:Port_E/IO_Port_E_inst/g528__2346
+inst:Port_E/IO_Port_E_inst/g529__1666
+inst:Port_E/IO_Port_E_inst/g530__7410
+inst:Port_E/IO_Port_E_inst/g531__6417
+inst:Port_E/IO_Port_E_inst/g532__5477
+inst:Port_E/g39__2398
+inst:Port_E/g42__5107
+inst:Port_E/g699__6260
+inst:Port_E/g700__4319
+inst:Port_E/g701__8428
+inst:Port_E/g40__5526
+inst:Port_E/g41__6783
+inst:Port_E/g702__3680
+inst:Port_E/g703__1617
+inst:Port_E/g704__2802
+inst:Port_E/g705__1705
+inst:Port_E/g706__5122
+inst:Port_E/g707__8246
+inst:Port_E/g708__7098
+inst:Port_E/g709__6131
+inst:Port_E/g710__1881
+inst:Port_E/g711__5115
+inst:Port_E/g712__7482
+inst:Port_E/g713__4733
+inst:Port_E/g547__6161
+inst:Port_E/g548__9315
+inst:Port_E/g2__9945
+inst:Port_E/g714__2883
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/rg_current_reg[0]
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/rg_current_reg[2]
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/rg_current_reg[3]
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g529__2398
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/rg_current_reg[1]
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g531__5107
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g532__6260
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g533__4319
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g534__8428
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g535__5526
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g536__6783
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g537__3680
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g538__1617
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g539__2802
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g540__1705
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g541__5122
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g542__8246
+inst:Port_E/IO_Port_E_inst/rg_md_portx_inst/g543
+inst:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/rg_current_reg[0]
+inst:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/rg_current_reg[1]
+inst:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/rg_current_reg[2]
+inst:Port_E/IO_Port_E_inst/rg_md_ddrx_inst/rg_current_reg[3]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_sync_int_reg[3]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_sync_int_reg[2]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_sync_int_reg[0]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_sync_int_reg[1]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_latch_reg[2]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_latch_reg[0]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_latch_reg[1]
+inst:Port_E/IO_Port_E_inst/synchronizer_pinx_inst/d_latch_reg[3]
+Total number of logical only instances in design 'Port_E' : 68
+
+design 'Port_E' has the following logical only libcells linked to above instance(s)
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AO222HDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AND2HDV2RD
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INOR2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NOR3BBHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AND3HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NOR3HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/CLKNAND2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NAND2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/TBUFHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NAND3BBHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/TBUFHDV1
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/IOA22HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/MUX2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/CLKMUX2HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/NOR2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INAND2HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AOI21BHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/IAO22HDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/DRNQHDV4
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/AO22HDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/OAI21BHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/INHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/EDRNQHDV0
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/DQHDV2
+lib_cell:scc013ull_hd_rvt_ss_v1p08_125c_basic/scc013ull_hd_rvt_ss_v1p08_125c_basic/LAHHDV0
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+              Name                       Total
+----------------------------------------------
+Unresolved References                        0
+Empty Modules                                0
+Unloaded Port(s)                             6
+Unloaded Sequential Pin(s)                   0
+Unloaded Combinational Pin(s)                0
+Assigns                                      8
+Undriven Port(s)                             0
+Undriven Leaf Pin(s)                         0
+Undriven hierarchical pin(s)                13
+Multidriven Port(s)                          0
+Multidriven Leaf Pin(s)                      0
+Multidriven hierarchical Pin(s)              0
+Multidriven unloaded net(s)                  0
+Constant Port(s)                             4
+Constant Leaf Pin(s)                         0
+Constant hierarchical Pin(s)                 0
+Preserved leaf instance(s)                   0
+Preserved hierarchical instance(s)           0
+Feedthrough Modules(s)                       0
+Libcells with no LEF cell                    0
+Physical (LEF) cells with no libcell         0
+Subdesigns with long module name             0
+Physical only instance(s)                    0
+Logical only instance(s)                    68
+
+  Done Checking the design.

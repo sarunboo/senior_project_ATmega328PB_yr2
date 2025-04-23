@@ -1,0 +1,12 @@
+1741182046 /nfs/mcu8b/sarun/mcu8bit_USART/FIFO.sv
+1745315589 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb6.v
+1735576886 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb5.v
+1741188930 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb4.v
+1732193989 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb3.v
+1741182894 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb2.v
+1728028368 /nfs/mcu8b/sarun/mcu8bit_USART/USART_Clk.v
+1735572441 /nfs/mcu8b/sarun/mcu8bit_USART/usart_test_tb.v
+1728028368 /nfs/mcu8b/sarun/mcu8bit_USART/USART_Clk.sv
+1730139057 /nfs/mcu8b/sarun/mcu8bit_USART/USARTn.v
+1741189379 /nfs/mcu8b/sarun/mcu8bit_USART/USARTn.sv
+1728028368 /nfs/mcu8b/sarun/mcu8bit_USART/FIFO.v

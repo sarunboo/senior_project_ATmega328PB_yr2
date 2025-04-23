@@ -1,0 +1,25 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-gui
+-TCL
+-MESSAGES
++EMGRLOG
+xrun.log
+-XLSTIME
+1730706600
+-XLKEEP
+-XLMODE
+./xcelium.d/run.lnx8664.23.09.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.23.09.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.23.09.d/hdl.var
+-XLNAME
+xrun
+-XLVERSION
+"TOOL:	xrun(64)	23.09-s001"
+-XLNAME
+./xcelium.d/run.lnx8664.23.09.d/esidcad1_0bc72229-2448-4996-b11e-3bbf4d5e77fe

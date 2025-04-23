@@ -1,0 +1,6 @@
+define LIB_MAP ( $LIB_MAP \
+, ../../../scc013ull_hd_rvt.v => scc013ull_hd_rvt \
+)
+define LIB_MAP ( $LIB_MAP \
+, ../../../scc013ull_hd_rvt.v => scc013ull_hd_rvt \
+)

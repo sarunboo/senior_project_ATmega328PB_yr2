@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+Port_E.sv
+rg_md.sv
+synchronizer.sv
+IO_Port.sv
+gpio_PE_tb.v
+-access
++rwc
+-gui

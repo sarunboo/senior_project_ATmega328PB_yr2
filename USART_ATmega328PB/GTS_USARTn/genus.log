@@ -1,0 +1,15 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[15:54:20.188297] Configured Lic search path (23.02-s003): 5280@innov132.inno.kmitl.ac.th
+
+Version: 23.10-p004_1, built Wed Jan 31 22:43:46 PST 2024
+Options: 
+Date:    Thu Apr 03 15:54:20 2025
+Host:    esidcad1 (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (16cores*32cpus*1physical cpu*AMD Ryzen 9 7950X 16-Core Processor 1024KB) (64763516KB)
+PID:     3927209
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis

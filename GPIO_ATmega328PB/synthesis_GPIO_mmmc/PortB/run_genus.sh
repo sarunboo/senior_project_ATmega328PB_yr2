@@ -1,0 +1,1 @@
+genus -abort_on_error -f genus_script.tcl -log "genus_run.log"
