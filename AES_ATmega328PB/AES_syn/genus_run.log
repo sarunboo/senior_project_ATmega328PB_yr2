@@ -1,0 +1,143 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[23:49:09.188377] Configured Lic search path (23.02-s003): 5280@innov132.inno.kmitl.ac.th
+
+Version: 23.10-p004_1, built Wed Jan 31 22:43:46 PST 2024
+Options: -abort_on_error -files genus_script.tcl -log genus_run.log 
+Date:    Mon Apr 21 23:49:09 2025
+Host:    esidcad1 (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (16cores*32cpus*1physical cpu*AMD Ryzen 9 7950X 16-Core Processor 1024KB) (64763516KB)
+PID:     2956181
+OS:      Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+Checking out license: Genus_Synthesis
+[23:49:09.265346] Periodic Lic check successful
+[23:49:09.265355] Feature usage summary:
+[23:49:09.265355] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (1 second elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus:root: 1> source genus_script.tcl
+#@ Begin verbose source ./genus_script.tcl
+@file(genus_script.tcl) 7: set LIB_DIR     "/nfs/mcu8b/jirath/01lib/"
+@file(genus_script.tcl) 9: set mmmc_tcl  "mmmc.tcl"
+@file(genus_script.tcl) 10: set RTL_DIR     "/nfs/mcu8b/sarun/AES_syn/source"
+@file(genus_script.tcl) 11: set TOP_DESIGN_NAME     "AES_TOP"
+@file(genus_script.tcl) 13: file mkdir   report
+@file(genus_script.tcl) 14: file mkdir   outputs
+@file(genus_script.tcl) 16: set_db  init_lib_search_path     ${LIB_DIR}
+  Setting attribute of root '/': 'init_lib_search_path' = /nfs/mcu8b/jirath/01lib/
+@file(genus_script.tcl) 17: set_db  init_hdl_search_path     ${RTL_DIR}
+  Setting attribute of root '/': 'init_hdl_search_path' = /nfs/mcu8b/sarun/AES_syn/source
+@file(genus_script.tcl) 19: read_mmmc ${mmmc_tcl}
+  Setting attribute of root '/': 'is_read_mmmc_flow' = true
+Sourcing './mmmc.tcl' (Mon Apr 21 23:49:14 +07 2025)...
+#@ Begin verbose source ./mmmc.tcl
+@file(mmmc.tcl) 1: create_library_set -name scc013ull_hd_rvt_ss_v1p08_125c_basic -timing {"scc013ull_hd_rvt_ss_v1p08_125c_basic.lib"}
+@file(mmmc.tcl) 2: create_library_set -name scc013ull_hd_rvt_ff_v1p32_-40c_basic -timing {"scc013ull_hd_rvt_ff_v1p32_-40c_basic.lib"}
+@file(mmmc.tcl) 3: create_library_set -name scc013ull_hd_rvt_tt_v1p5_25c_basic -timing {"scc013ull_hd_rvt_tt_v1p5_25c_basic.lib"}
+@file(mmmc.tcl) 5: create_opcond -name ss_v1p08_125c -process 1 -voltage 1.08 -temperature 125
+@file(mmmc.tcl) 6: create_opcond -name ff_v1p32 -process 1 -voltage 1.32 -temperature -40
+@file(mmmc.tcl) 7: create_opcond -name tt_v1p5_25c -process 1 -voltage 1.5 -temperature 25
+@file(mmmc.tcl) 12: create_timing_condition -name timing_cond_ss_v1p08_125c -library_sets { scc013ull_hd_rvt_ss_v1p08_125c_basic }
+@file(mmmc.tcl) 13: create_timing_condition -name timing_cond_ff_v1p32 -library_sets { scc013ull_hd_rvt_ff_v1p32_-40c_basic }
+@file(mmmc.tcl) 14: create_timing_condition -name timing_cond_tt_v1p5_25c -library_sets { scc013ull_hd_rvt_tt_v1p5_25c_basic }
+@file(mmmc.tcl) 16: create_rc_corner -name rc_corner
+@file(mmmc.tcl) 17: create_rc_corner -name rc_corner -qrc_tech /nfs/mcu8b/sarun/01lib_v/scc013u_hd_7lm_1tm_thin.tf
+@file(mmmc.tcl) 22: create_delay_corner -name delay_corner_ss_v1p08_125c -rc_corner {rc_corner} -early_timing_condition timing_cond_ss_v1p08_125c \
+-late_timing_condition timing_cond_ss_v1p08_125c -early_rc_corner rc_corner \
+-late_rc_corner rc_corner
+@file(mmmc.tcl) 25: create_delay_corner -name delay_corner_ff_v1p32 -rc_corner {rc_corner} -early_timing_condition timing_cond_ff_v1p32 \
+-late_timing_condition timing_cond_ff_v1p32 -early_rc_corner rc_corner \
+-late_rc_corner rc_corner
+@file(mmmc.tcl) 28: create_delay_corner -name delay_corner_tt_v1p5_25c -rc_corner {rc_corner} -early_timing_condition timing_cond_tt_v1p5_25c \
+-late_timing_condition timing_cond_tt_v1p5_25c -early_rc_corner rc_corner \
+-late_rc_corner rc_corner
+@file(mmmc.tcl) 32: create_constraint_mode -name functional_ss_v1p08_125c -sdc_files /nfs/mcu8b/sarun/AES_syn/constraints/aes_top_constraints_ss.sdc
+@file(mmmc.tcl) 33: create_constraint_mode -name functional_ff_v1p32 -sdc_files /nfs/mcu8b/sarun/AES_syn/constraints/aes_top_constraints_ff.sdc
+@file(mmmc.tcl) 34: create_constraint_mode -name functional_tt_v1p5_25c -sdc_files /nfs/mcu8b/sarun/AES_syn/constraints/aes_top_constraints_tt.sdc
+@file(mmmc.tcl) 36: create_analysis_view -name view_ss_v1p08_125c -constraint_mode functional_ss_v1p08_125c -delay_corner delay_corner_ss_v1p08_125c
+@file(mmmc.tcl) 37: create_analysis_view -name view_ff_v1p32 -constraint_mode functional_ff_v1p32 -delay_corner delay_corner_ff_v1p32
+@file(mmmc.tcl) 38: create_analysis_view -name view_tt_v1p5_25c -constraint_mode functional_tt_v1p5_25c -delay_corner delay_corner_tt_v1p5_25c
+@file(mmmc.tcl) 43: set_analysis_view -setup { view_ss_v1p08_125c view_ff_v1p32 view_tt_v1p5_25c}
+
+  Message Summary for Library scc013ull_hd_rvt_ss_v1p08_125c_basic.lib:
+  *********************************************************************
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  *********************************************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.080000, 125.000000) in library 'scc013ull_hd_rvt_ss_v1p08_125c_basic.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD16' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD16' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD32' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD64' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'FDCAPHD8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'F_DIODEHD8' must have an output pin.
+Info    : Set default library domain. [LBR-109]
+        : The default library domain is 'library_domain:timing_cond_ss_v1p08_125c'.
+@file(mmmc.tcl) 44: write_mmmc -dir outputs/
+File outputs//mmmc.tcl has been written.
+#@ End verbose source ./mmmc.tcl
+@file(genus_script.tcl) 22: read_hdl   -language sv ${TOP_DESIGN_NAME}.sv cbc_logic.sv SPI_slave.sv AES_main.sv aes_key_expand.sv round.sv lastround.sv subbytes.sv sbox.sv shiftrows.sv mixcolumn.sv
+function [automatic]	frcon;
+         |
+Warning : Usage of non-static tasks or functions might result in simulation-synthesis mismatch. [VLOGPT-692]
+        : in file '/nfs/mcu8b/sarun/AES_syn/source/aes_key_expand.sv' on line 170, column 10.
+        : Use the 'automatic' keyword for declaring functions and tasks.
+function [automatic]	frcon;
+                  |
+Error   : Parsing error. [VLOGPT-1] [read_hdl]
+        : in file '/nfs/mcu8b/sarun/AES_syn/source/aes_key_expand.sv' on line 170, column 19.
+        : Invalid Verilog syntax is parsed, or unsupported Verilog syntax is encountered.
+#@ End verbose source ./genus_script.tcl
+1
+Encountered problems processing file: genus_script.tcl
+
+Lic Summary:
+[23:49:16.174026] Cdslmd servers: innov132
+[23:49:16.174032] Feature usage summary:
+[23:49:16.174032] Genus_Synthesis
+
+Abnormal exit.Abnormal exit.

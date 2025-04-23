@@ -1,0 +1,16 @@
+  =================
+   Message Summary
+  =================
+-----------------------------------------------------------------------------------------------------------------------
+|   Id   |  Sev  |Count|                                         Message Text                                         |
+-----------------------------------------------------------------------------------------------------------------------
+|MESG-11 |Warning|    3|Maximum message print count reached.                                                          |
+|RPT-16  |Info   |    1|Joules engine is used.                                                                        |
+|SYNTH-8 |Info   |    1|Done incrementally optimizing.                                                                |
+|TUI-744 |Info   |    3|Timing analysis will be done for this view.                                                   |
+|        |       |     |Worst paths will be shown in this view.                                                       |
+|WSDF-201|Warning|    7|No delay description exists for an instance.                                                  |
+|        |       |     |The timing arc of the instance does not exist or is disabled by disable_timing or constant    |
+|        |       |     | value. The delay information will not be generated for the instance. The instance could be a |
+|        |       |     | loop breaker or its inputs could be driven by constant                                       |
+-----------------------------------------------------------------------------------------------------------------------

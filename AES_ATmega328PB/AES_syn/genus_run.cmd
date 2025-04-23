@@ -1,0 +1,7 @@
+# Cadence Genus(TM) Synthesis Solution, Version 23.10-p004_1, built Feb  1 2024 13:43:46
+
+# Date: Mon Apr 21 23:49:09 2025
+# Host: esidcad1 (x86_64 w/Linux 4.18.0-553.16.1.el8_10.x86_64) (16cores*32cpus*1physical cpu*AMD Ryzen 9 7950X 16-Core Processor 1024KB)
+# OS:   Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+source genus_script.tcl
